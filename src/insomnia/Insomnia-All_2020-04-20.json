@@ -1,0 +1,180 @@
+{
+    "_type": "export",
+    "__export_format": 4,
+    "__export_date": "2020-04-20T15:53:56.164Z",
+    "__export_source": "insomnia.desktop.app:v7.1.1",
+    "resources": [
+        {
+            "_id": "req_9f0d3af4b85342d8b5bafdc97b9e08f0",
+            "authentication": {},
+            "body": {},
+            "created": 1587397441637,
+            "description": "",
+            "headers": [],
+            "isPrivate": false,
+            "metaSortKey": -1587397441637,
+            "method": "DELETE",
+            "modified": 1587397457782,
+            "name": "Delete task",
+            "parameters": [],
+            "parentId": "fld_68b07746022a4707b30c2b5259a305fd",
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingFollowRedirects": "global",
+            "settingRebuildPath": true,
+            "settingSendCookies": true,
+            "settingStoreCookies": true,
+            "url": "{{ baseUrl  }}/tasks/1",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_68b07746022a4707b30c2b5259a305fd",
+            "created": 1587393311487,
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": {},
+            "metaSortKey": -1587393311487,
+            "modified": 1587398015945,
+            "name": "TaskManager",
+            "parentId": "wrk_b300206a4a1a41baaffa5784a4b52256",
+            "_type": "request_group"
+        },
+        {
+            "_id": "wrk_b300206a4a1a41baaffa5784a4b52256",
+            "created": 1587392473796,
+            "description": "",
+            "modified": 1587392473795,
+            "name": "Insomnia",
+            "parentId": null,
+            "_type": "workspace"
+        },
+        {
+            "_id": "req_ad37be833d4343afac26caf2ffa4c3a2",
+            "authentication": {},
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"name\" : \"taskName1\",\n\t\"subTasks\": []\n}"
+            },
+            "created": 1587396212869,
+            "description": "",
+            "headers": [
+                {
+                    "id": "pair_cf8bb924dab14087a3378077be02d74f",
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "isPrivate": false,
+            "metaSortKey": -1587396212869,
+            "method": "PUT",
+            "modified": 1587396610028,
+            "name": "Modify task",
+            "parameters": [],
+            "parentId": "fld_68b07746022a4707b30c2b5259a305fd",
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingFollowRedirects": "global",
+            "settingRebuildPath": true,
+            "settingSendCookies": true,
+            "settingStoreCookies": true,
+            "url": "{{ baseUrl  }}/tasks/1",
+            "_type": "request"
+        },
+        {
+            "_id": "req_143306e9d95f41a3b5f89144437bac48",
+            "authentication": {},
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"id\": 1,\n\t\"name\" : \"taskName\",\n\t\"subTasks\": []\n}"
+            },
+            "created": 1587393788550,
+            "description": "",
+            "headers": [
+                {
+                    "id": "pair_a3e5d633d9574c5687b0e00b44f9b75c",
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "isPrivate": false,
+            "metaSortKey": -1587393788550,
+            "method": "POST",
+            "modified": 1587396226955,
+            "name": "Create task",
+            "parameters": [],
+            "parentId": "fld_68b07746022a4707b30c2b5259a305fd",
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingFollowRedirects": "global",
+            "settingRebuildPath": true,
+            "settingSendCookies": true,
+            "settingStoreCookies": true,
+            "url": "{{ baseUrl  }}/tasks",
+            "_type": "request"
+        },
+        {
+            "_id": "req_ab279f90ad494afe8d3e3e4f67e6748b",
+            "authentication": {},
+            "body": {},
+            "created": 1587393316961,
+            "description": "",
+            "headers": [],
+            "isPrivate": false,
+            "metaSortKey": -1587393316961,
+            "method": "GET",
+            "modified": 1587396235212,
+            "name": "Get tasks",
+            "parameters": [],
+            "parentId": "fld_68b07746022a4707b30c2b5259a305fd",
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingFollowRedirects": "global",
+            "settingRebuildPath": true,
+            "settingSendCookies": true,
+            "settingStoreCookies": true,
+            "url": "{{ baseUrl  }}/tasks",
+            "_type": "request"
+        },
+        {
+            "_id": "env_3400c2c09e5c53ae48bbfd2e4917af38c3a006ec",
+            "color": null,
+            "created": 1587392473842,
+            "data": {},
+            "dataPropertyOrder": null,
+            "isPrivate": false,
+            "metaSortKey": 1587392473842,
+            "modified": 1587392473842,
+            "name": "Base Environment",
+            "parentId": "wrk_b300206a4a1a41baaffa5784a4b52256",
+            "_type": "environment"
+        },
+        {
+            "_id": "jar_3400c2c09e5c53ae48bbfd2e4917af38c3a006ec",
+            "cookies": [],
+            "created": 1587392473845,
+            "modified": 1587392473845,
+            "name": "Default Jar",
+            "parentId": "wrk_b300206a4a1a41baaffa5784a4b52256",
+            "_type": "cookie_jar"
+        },
+        {
+            "_id": "env_4bb2e80358e04b08b976b1da5f0fe0b2",
+            "color": null,
+            "created": 1587393358204,
+            "data": {
+                "baseUrl": "http://localhost:5000"
+            },
+            "dataPropertyOrder": {
+                "&": [
+                    "baseUrl"
+                ]
+            },
+            "isPrivate": false,
+            "metaSortKey": 1587393358204,
+            "modified": 1587393401932,
+            "name": "TaskManager",
+            "parentId": "env_3400c2c09e5c53ae48bbfd2e4917af38c3a006ec",
+            "_type": "environment"
+        }
+    ]
+}
